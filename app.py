@@ -17,7 +17,7 @@ colors = {
     }
 
 markdown_text = '''
-### The purpose of the spend comparison app
+### Hello Rachel
 
 The spend comparison app shows you how your spending today compares to your
 spending over the past two years. You may find this helpful to manage your
@@ -25,25 +25,25 @@ budget.
 '''
 
 df = pd.read_csv(
-    'https://gist.githubusercontent.com/chriddyp/' +
-    '5d1ea79569ed194d432e56108a04d188/raw/' +
-    'a9f9e8076b837d541398e999dcbac2b2826a81f8/'+
-    'gdp-life-exp-2007.csv')
+    'https://gist.githubusercontent.com/chriddyp/5d1ea79569ed194d432e56108a04d188/raw/a9f9e8076b837d541398e999dcbac2b2826a81f8/gdp-life-exp-2007.csv')
 
 
 app.layout = html.Div(style = {'backgroundColor' : colors['background']}, children = [
-    html.H1(
-        children='Hello Rachel',
-        style = {
-            'textAlign' : 'left',
-            'color': colors['text']
-        }
-    ),
+    # html.H1(
+    #     children='Hello Rachel',
+    #     style = {
+    #         'textAlign' : 'left',
+    #         'color': colors['text']
+    #     }
+    # ),
 
-    html.Div(children='This is how your spending has changed over the last three years.', style = {
-        'textAlign' : 'left',
-        'color' : colors['text']
-    }),
+    # html.Div(
+    # 	children='This is how your spending has changed over the last three years.', 
+    # 	style = {
+    #     	'textAlign' : 'left',
+    #     	'color' : colors['text']
+    # 	}
+    # ),
 
     dcc.Markdown(children = markdown_text),
 
