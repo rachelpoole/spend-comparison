@@ -26,7 +26,7 @@ spending over the past two years. You may find this helpful to manage your
 budget.
 '''
 
-available_indicators = df['Indicator Name'].unique()
+available_months = df['Indicator Name'].unique()
 
 app.layout = html.Div([
     dcc.Markdown(children = markdown_text),
